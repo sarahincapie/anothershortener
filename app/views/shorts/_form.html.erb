@@ -1,8 +1,8 @@
 <%= form_for @short do |f| %>
 
-  <%= f.label 'Put your URLs here' %>:
+  <%= f.label "Put your URLs here, I'll shorten it for you" %>:
   <%= f.text_field :long %><br />
   <% f.hidden_field :short, :value => "nil"  %><br />
-  <%= f.submit %>
-  
+  <%= f.submit 'randomize your url' %>
+
 <% end %>
